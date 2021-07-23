@@ -1,9 +1,11 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
+import {container} from  '../components/layout.module.css';
+console.log(container)
 
-const Layout = ({pageTitle,pageHeading}) => {
+const Layout = ({pageTitle,pageHeading,children}) => {
     return(
-        <main>
+        <main className = {container}>
         <title>{pageTitle}</title>
          <nav>
              <ul>
@@ -12,8 +14,11 @@ const Layout = ({pageTitle,pageHeading}) => {
                  <li><Link to = "/contact">Contact Me</Link></li>
              </ul>
          </nav>
-
          <h1>{pageHeading}</h1>
+         {children}
+         <footer>
+             &copy; 2021 Olvine George
+         </footer>
         </main>
     )
 }
