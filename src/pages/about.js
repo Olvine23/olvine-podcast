@@ -1,4 +1,6 @@
-import * as React from 'react'
+import * as React from 'react';
+import {Link} from 'gatsby'
+
 
 const About = () => {
     return (
@@ -7,6 +9,7 @@ const About = () => {
     <p>This is a page that describes Me</p>
     <p>Olvine George</p>
     <h3>Get In Touch</h3>
+    <Link to = "/">Back to home</Link>
     </>
     );
 };
