@@ -1,6 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
 .container{
-    margin: auto;
-    max-width: 500px;
+    margin-left: 150px;
+    max-width: 1000px;
     font-family: calibri;
  
 }
+
+ a{
+     text-decoration: none;
+     color: brown;
+ }
+
+ul{ 
+    display: flex;
+    list-style-type: none;
+    float: right;
+}
+ul li{
+    margin-left: 2em;
+    text-transform: uppercase;
+}
+table{
+    float: right;
+}
+
+footer{
+    background-color: dimgrey;
+    margin-top: 100px;
+}
+ 
