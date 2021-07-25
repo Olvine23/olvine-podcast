@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout'
 import {StaticImage} from 'gatsby-plugin-image'
 import {Link} from 'gatsby'
+import Table from '../components/table';
 
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
 
     <h3>Get In Touch</h3>
     <Link to = "/">Back to home</Link>
+    <Table />
     </Layout>
     );
 };
