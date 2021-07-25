@@ -10,10 +10,10 @@ body{
     font-family: calibri;
  
 }
-
+.pink{color:purple}
  a{
      text-decoration: none;
-     color: brown;
+     color: purple;
  }
 
 ul{ 

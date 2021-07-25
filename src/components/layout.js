@@ -15,7 +15,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
                  <li><Link to = "/contact">Contact Me</Link></li>
              </ul>
          </nav>
-         <h1>{pageHeading}</h1>
+         <h1 className ={pink}>{pageHeading}</h1>
          {children}
          <Table />
          <footer>
