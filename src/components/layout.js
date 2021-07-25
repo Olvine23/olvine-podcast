@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import * as React from 'react';
 import Table from './table';
 import {container, pink} from  '../components/layout.module.css';
-console.log(container)
+
 
 const Layout = ({pageTitle,pageHeading,children}) => {
     return(
