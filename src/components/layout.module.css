@@ -1,14 +1,20 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #2a3047;
+    color: #fff;
 
     
 }
  
-.pink{color:purple}
+.pink{color:rgb(151, 93, 60)}
  a{
      text-decoration: none;
-     color: purple;
+     color:rgb(151, 93, 60);
+ }
+ a:hover{
+    text-decoration: none;
+    color:white;
  }
 
 ul{ 
