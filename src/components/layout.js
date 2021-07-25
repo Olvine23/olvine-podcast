@@ -11,8 +11,10 @@ const Layout = ({pageTitle,pageHeading,children}) => {
          <nav>
              <ul>
                  <li className = {pink}><Link  to = "/">Home</Link></li>
+                 <li><Link to = "/blog">My Blogs</Link></li>
                  <li><Link to = "/about">About Me</Link></li>
                  <li><Link to = "/contact">Contact Me</Link></li>
+                 
              </ul>
          </nav>
          <h1 className ={pink}>{pageHeading}</h1>

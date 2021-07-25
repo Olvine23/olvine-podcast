@@ -4,12 +4,7 @@ body{
 
     
 }
-.container{
-    margin-left: 150px;
-    max-width: 1000px;
-    font-family: calibri;
  
-}
 .pink{color:purple}
  a{
      text-decoration: none;
@@ -32,10 +27,11 @@ table{
 footer{
     background-color: dimgrey;
     margin-top: 100px;
+    padding: 15px;
 }
 .container{
-    margin-left: 150px;
-    max-width: 900px;
+     margin: auto;
+    max-width: 1000px;
     font-family: calibri;
     
 }
