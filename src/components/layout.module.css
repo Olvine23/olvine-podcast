@@ -3,10 +3,18 @@ body{
     padding: 0;
     background-color: #2a3047;
     color: #fff;
-
+}
+.nav ul{
+    float: right;
+    margin-left: 2em;
+    display: flex;
     
 }
- 
+ .nav li{
+    margin-left: 2em;
+    list-style-type: none;
+    text-transform: uppercase;
+ }
 .pink{color:rgb(151, 93, 60)}
  a{
      text-decoration: none;
@@ -18,16 +26,10 @@ body{
  }
 
 ul{ 
-    display: flex;
-    list-style-type: none;
-    float: right;
-    text-transform: uppercase;
-     
+    display: block;
+    list-style-type: circle;    
 }
-ul li{
-    margin-left: 2em;
-   
-}
+ 
 .list
 {
     display: block;
@@ -47,10 +49,7 @@ footer{
     font-family: calibri;
     
 }
-ul{ 
-    display: flex;
-    list-style-type: none;
-}
+ 
 .siteTitle{
     font-size: 3rem;
     color: gray;

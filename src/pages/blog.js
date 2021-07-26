@@ -2,18 +2,27 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import {graphql} from 'gatsby';
 import {list } from '../components/layout.module.css'
+import {MDXRenderer} from 'gatsby-plugin-mdx'
 
 const Blog = ({data}) => {
     console.log(data)
     return(
         <Layout pageTitle = 'Blogs' pageHeading = 'Blogs'>
             <p>Hello</p>
-            <ul className = {list}>
+          
                 {data.allMdx.nodes.map(node => {
-                    return <li key = {node.name}>{node.frontmatter.title}</li>
+                    return  <article key = {node.frontmatter.title}>
+                   <h2> {node.frontmatter.title}</h2>
+                    <p> {node.frontmatter.date} </p>
+
+                   <MDXRenderer>
+                    {node.body}
+                    </MDXRenderer>
+                    
+                    </article>
 
                 })}
-            </ul>
+           
            
         </Layout>
 

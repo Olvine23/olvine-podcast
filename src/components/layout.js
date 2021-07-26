@@ -1,7 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import * as React from 'react';
  
-import {container, pink, siteTitle} from  '../components/layout.module.css';
+import {container, pink, siteTitle, nav} from  '../components/layout.module.css';
 
 
   
@@ -20,10 +20,10 @@ const Layout = ({pageTitle,pageHeading,children}) => {
     return(
         <main className = {container}>
         <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-        <p className = {siteTitle}>{data.site.siteMetadata.title}</p>
-         <nav>
+        <Link to = "/"><p className = {siteTitle}>{data.site.siteMetadata.title}</p></Link> 
+         <nav className ={nav}>
              <ul>
-                 <li className = {pink}><Link  to = "/">Home</Link></li>
+                 <li><Link  to = "/">Home</Link></li>
                  <li><Link to = "/blog">My Blogs</Link></li>
                  <li><Link to = "/about">About Me</Link></li>
                  <li><Link to = "/contact">Contact Me</Link></li>
