@@ -10,7 +10,7 @@ const Blog = ({data}) => {
             <p>Hello</p>
             <ul className = {list}>
                 {data.allFile.nodes.map(node => {
-                    return <li key = {node}>{node.name}</li>
+                    return <li key = {node.name}>{node.name}</li>
 
                 })}
             </ul>

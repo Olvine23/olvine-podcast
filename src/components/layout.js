@@ -32,7 +32,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
          </nav>
          <h1 className ={pink}>{pageHeading}</h1>
          {children}
-         
+          
          <footer>
              &copy; 2021 Olvine George
          </footer>
