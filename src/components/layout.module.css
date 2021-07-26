@@ -21,16 +21,20 @@ ul{
     display: flex;
     list-style-type: none;
     float: right;
+    text-transform: uppercase;
+     
 }
 ul li{
     margin-left: 2em;
-    text-transform: uppercase;
+   
 }
-.list{
-display: block;
-float: left;
-list-style-type: square;
-text-transform: lowercase;}
+.list
+{
+    display: block;
+    float: left;
+    list-style-type: square;
+    text-transform: lowercase;
+}
  
 footer{
     background-color: dimgrey;
