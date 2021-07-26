@@ -9,8 +9,8 @@ const Blog = ({data}) => {
         <Layout pageTitle = 'Blogs' pageHeading = 'Blogs'>
             <p>Hello</p>
             <ul className = {list}>
-                {data.allFile.nodes.map(node => {
-                    return <li key = {node.name}>{node.name}</li>
+                {data.allMdx.nodes.map(node => {
+                    return <li key = {node.name}>{node.frontmatter.title}</li>
 
                 })}
             </ul>
@@ -21,14 +21,18 @@ const Blog = ({data}) => {
 };
 
 export const query = graphql`
-query{
-    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
-      nodes {
-        name
-        sourceInstanceName
+query {
+  allMdx {
+    nodes {
+      frontmatter {
+        date(formatString: " dddd, MMMM Do YYYY")
+        title
       }
+      id
+      body
     }
   }
+}
   
 
 `
