@@ -1,6 +1,6 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import * as React from 'react';
-import Table from './table';
+ 
 import {container, pink, siteTitle} from  '../components/layout.module.css';
 
 
@@ -32,7 +32,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
          </nav>
          <h1 className ={pink}>{pageHeading}</h1>
          {children}
-         <Table />
+         
          <footer>
              &copy; 2021 Olvine George
          </footer>
