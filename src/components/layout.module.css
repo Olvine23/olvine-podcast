@@ -66,4 +66,7 @@ p{
     ul{
         display: block;
     }
+    p{
+        width: 100%;
+    }
 }
