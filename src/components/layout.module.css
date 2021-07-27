@@ -59,7 +59,7 @@ footer{
 p{
      font-size: larger;
      width:800px;
-     margin:auto;
+    
 }
  
 @media  only screen  and (max-width:500px){
@@ -68,5 +68,6 @@ p{
     }
     p{
         width: 100%;
+        
     }
 }
