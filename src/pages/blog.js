@@ -35,8 +35,8 @@ const Blog = ({data}) => {
 };
 
 export const query = graphql`
-query {
-  allMdx {
+query  {
+  allMdx(sort: {fields: frontmatter___date, order: DESC}) {
     nodes {
       frontmatter {
         date(formatString: " dddd, MMMM Do YYYY")
@@ -47,7 +47,7 @@ query {
     }
   }
 }
-  
+
 
 `
 
