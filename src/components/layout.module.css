@@ -1,8 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #2a3047;
-    color: #fff;
+    /* background-color: #2a3047; */
+    background-color: #fff;
+    color: #000;
 }
 .nav ul{
     float: right;
@@ -55,6 +56,11 @@ footer{
     color: gray;
     font-weight:700;
 }
+p{
+     font-size: larger;
+     width:800px
+}
+ 
 @media  only screen  and (max-width:500px){
     ul{
         display: block;
