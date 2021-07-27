@@ -10,8 +10,6 @@ const Blog = ({data}) => {
     console.log(data)
     return(
         <Layout pageTitle = 'Blogs' pageHeading = 'Blogs'>
-            <p>Hello</p>
-          
                 {data.allMdx.nodes.map(node => {
                     return  <article key = {node.frontmatter.title}>
                    <h2> {node.frontmatter.title}</h2>

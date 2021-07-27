@@ -23,7 +23,7 @@ body{
  }
  a:hover{
     text-decoration: none;
-    color:white;
+    color:#000;
  }
 
 ul{ 
@@ -58,7 +58,8 @@ footer{
 }
 p{
      font-size: larger;
-     width:800px
+     width:800px;
+     margin:auto;
 }
  
 @media  only screen  and (max-width:500px){
