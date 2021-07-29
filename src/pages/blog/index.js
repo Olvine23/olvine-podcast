@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import {graphql} from 'gatsby';
 import {StaticImage} from 'gatsby-plugin-image'
 // import {blogs} from '../../components/layout.module.css'
@@ -25,7 +25,6 @@ const Blog = ({data}) => {
                     </article>
 
                 })}
-                
            
            
         </Layout>
@@ -34,13 +33,16 @@ const Blog = ({data}) => {
 };
 
 export const query = graphql`
-query ($id:String) {
-  mdx(id: {eq: $id}) {
-    frontmatter {
-      title
-      date(formatString: "MMMM D, YYYY")
+query  {
+  allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    nodes {
+      frontmatter {
+        date(formatString: " dddd, MMMM Do YYYY")
+        title
+      }
+      id
+      body
     }
-    body
   }
 }
 
