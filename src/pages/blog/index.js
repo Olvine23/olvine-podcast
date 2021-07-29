@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
-import {graphql} from 'gatsby';
+import {Link, graphql} from 'gatsby';
 import {StaticImage} from 'gatsby-plugin-image'
 // import {blogs} from '../../components/layout.module.css'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
@@ -12,15 +12,11 @@ const Blog = ({data}) => {
         <Layout pageTitle = 'Blogs' pageHeading = 'Blogs'>
                 {data.allMdx.nodes.map(node => {
                     return  <article key = {node.frontmatter.title}>
-                   <h2> {node.frontmatter.title}</h2>
+                   {/* <h2> {node.frontmatter.title}</h2> */}
+                   <Link to = {`/blog/${node.slug} `}>{node.frontmatter.title}</Link>
                     <p> {node.frontmatter.date} </p>
 
                     {/* <StaticImage  placeholder = "blurred" src ="../images/okay.jpg" height= {200} width ={300} /> */}
-
-
-                   <MDXRenderer>
-                   {node.body}
-                    </MDXRenderer>
                     
                     </article>
 
@@ -41,7 +37,7 @@ query  {
         title
       }
       id
-      body
+      slug
     }
   }
 }
