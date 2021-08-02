@@ -5,3 +5,15 @@
      line-height: 2px;
 
 }
+@media  only screen  and (max-width:500px){
+    ul{
+        display: block;
+    }
+   .blogs p{
+        width: 100%;
+        line-height: 2em;
+
+
+        
+    }
+}
