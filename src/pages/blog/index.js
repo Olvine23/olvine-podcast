@@ -10,20 +10,19 @@ const Blog = ({data}) => {
     console.log(data)
     return(
         <Layout pageTitle = 'Blogs' pageHeading = 'Blogs'>
-                {data.allMdx.nodes.map(node => {
-                    return  <article key = {node.frontmatter.title}>
-                   {/* <h2> {node.frontmatter.title}</h2> */}
-                   <Link to = {`/blog/${node.slug} `}>{node.frontmatter.title}</Link>
-                    <p> {node.frontmatter.date} </p>
-
-                    {/* <StaticImage  placeholder = "blurred" src ="../images/okay.jpg" height= {200} width ={300} /> */}
-                    
-                    </article>
-
-                })}
-           
-           
-        </Layout>
+               {
+        data.allMdx.nodes.map(node => (
+          <article key={node.id}>
+            <h2>
+              <Link to={`/blog/${node.slug}`}>
+                {node.frontmatter.title}
+              </Link>
+            </h2>
+            <p>Posted: {node.frontmatter.date}</p>
+          </article>
+        ))
+      }
+    </Layout>
 
     );
 };

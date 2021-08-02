@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     /* background-color: #2a3047; */
-    background-color: #6363a3;
+    background-color: #fff;
     /* background-color: #fff; */
     color: #000;
 }
@@ -49,9 +49,8 @@ footer{
      margin: auto;
     max-width: 1000px;
     font-family: calibri;
-    background-color: #2a3047;
-    padding: 5rem;
-    color: #fff;
+    
+    color: #000;
 }
  
 .siteTitle{
@@ -60,10 +59,7 @@ footer{
     font-weight:700;
 }
 p{
-     font-size: larger;
      width:800px;
-     line-height: 2em;
-    
 }
  
 @media  only screen  and (max-width:500px){
