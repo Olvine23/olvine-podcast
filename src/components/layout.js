@@ -20,7 +20,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
     return(
         <main className = {container}>
         <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-        <Link to = "/"><p className = {siteTitle}>{data.site.siteMetadata.title}</p></Link> 
+        {/* <Link to = "/"><p className = {siteTitle}>{data.site.siteMetadata.title}</p></Link>  */}
          <nav className ={nav}>
              <ul>
                  <li><Link  to = "/">Home</Link></li>
@@ -30,7 +30,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
                  
              </ul>
          </nav>
-         <h1 className ={pink}>{pageHeading}</h1>
+         <Link to ="/"><h1 className ={pink}>{pageHeading}</h1></Link>
          {children}
           
          <footer>
