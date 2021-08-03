@@ -1,5 +1,6 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import * as React from 'react';
+import "@fontsource/open-sans"
  
 import {container, pink, siteTitle, nav} from  '../components/layout.module.css';
 
