@@ -17,14 +17,14 @@ body{
     list-style-type: none;
     text-transform: uppercase;
  }
-.pink{color:rgb(151, 93, 60)}
+.pink{color:black}
  a{
      text-decoration: none;
      color:rgb(151, 93, 60);
  }
  a:hover{
     text-decoration: none;
-    color:#000;
+    color:rgb(206, 172, 133);
  }
 
 ul{ 

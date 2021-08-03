@@ -2,8 +2,9 @@ import * as React from "react";
 import { Link } from 'gatsby';
 import Layout from "../components/layout";
 import {StaticImage } from  'gatsby-plugin-image'
+ 
 
-
+ 
 const HomePage = () => {
 
   return (
@@ -14,10 +15,14 @@ const HomePage = () => {
     
     <StaticImage width = {400} layout ="fixed" height = { 400} placeholder = "blurred" src ="../images/okay.jpg" />
 
+      
+
 
      <p>I love this vscode github theme</p>
      <Link to = "about">About Me</Link>
+      
      </Layout>
+   
     
   );
  };

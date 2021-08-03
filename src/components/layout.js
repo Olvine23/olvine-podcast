@@ -31,6 +31,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
              </ul>
          </nav>
          <Link to ="/"><h1 className ={pink}>{pageHeading}</h1></Link>
+         <hr></hr>
          {children}
           
          <footer>
