@@ -1,16 +1,18 @@
-
+.date{
+    /* font-weight: lighter; */
+    font-style: italic;
+}
+.blogs {
+     
+    background-color: rgb(175, 174, 151);
+    
+}
  
  
 @media  only screen  and (max-width:500px){
+     
     ul{
         display: block;
     }
-   .blogs p{
-        width: 100%;
-         
-      
-        
-
-        
-    }
+    
 }
