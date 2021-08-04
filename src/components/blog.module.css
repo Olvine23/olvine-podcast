@@ -3,8 +3,9 @@
     color: #333;
     font-style: italic;
 }
-.blogs {
+.blogs p {
      /* background-color: rgb(175, 174, 151);   */
+     text-align: center;
 }
  
  

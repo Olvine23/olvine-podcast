@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
+import Image from "gatsby-image";
 import {Link, graphql} from 'gatsby';
 import {StaticImage} from 'gatsby-plugin-image'
 // import {blogs} from '../../components/layout.module.css'
@@ -13,6 +14,7 @@ const Blog = ({data}) => {
                {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
+            <Image alt = {node.frontmatter.title}> {node.frontmatter.image}</Image>
             <h2>
               <Link to={`/blog/${node.slug}`}>
                 {node.frontmatter.title}
@@ -35,9 +37,11 @@ query  {
       frontmatter {
         date(formatString: " dddd, MMMM Do YYYY")
         title
+         
       }
       id
       slug
+      
     }
   }
 }
