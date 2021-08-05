@@ -1,6 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import * as React from 'react';
 import "@fontsource/open-sans";
+import {Box} from 'theme-ui';
 
  
 import {container, pink, siteTitle, nav} from  '../components/layout.module.css';
@@ -35,6 +36,23 @@ const Layout = ({pageTitle,pageHeading,children}) => {
          <Link to ="/"><h1 className ={pink}>{pageHeading}</h1></Link>
          <hr></hr>
          {children}
+         <Box as="header" sx={{ bg: "highlight", mb: "1.45rem" }}>
+      <Box
+        as="div"
+        sx={{
+          m: "0 auto",
+          maxWidth: "640px",
+          p: "1.45rem 1.0875rem",
+        }}
+      >
+        <Link to="/">
+          <h3>side</h3>
+        </Link>
+        <Box as="p" variant="styles.p">
+          <p>Hello world</p>
+        </Box>
+      </Box>
+    </Box>
           
          <footer>
              &copy; 2021 Olvine George

@@ -3,7 +3,14 @@ module.exports = {
     siteUrl: "https://olvinepodcast.gatsbyjs.io",
     title: "OlvineGeorge",
   },
-  plugins: [
+  plugins: [ 
+            { 
+              resolve: "gatsby-plugin-theme-ui",
+              options: {
+                prismPrset:'night-owl',
+                preset: '@theme-ui/preset-funk',
+              }
+            },
             "gatsby-plugin-gatsby-cloud",
             "gatsby-plugin-image",
             "gatsby-plugin-sharp",
@@ -15,7 +22,8 @@ module.exports = {
                     {
                       resolve:"gatsby-remark-images",
                       options:{
-                        maxWidth:400,
+                        maxWidth:650,
+                        quality:60,
 
                       },
                     },

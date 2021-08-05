@@ -10,7 +10,7 @@ const About = () => {
     <Layout pageHeading = 'About' pageHeading = 'About Me' >
     <p>This is a page that describes Me</p>
     <p>Olvine George</p>
-    <StaticImage layout = "fullWidth" placeholder = "blurred" src ="../images/olvine.JPG" height= {500} width ={700} />
+    <StaticImage placeholder = "blurred" src ="../images/olvine.JPG" height= {800} width ={800} />
 
     <h3>Get In Touch</h3>
     <Link to = "/">Back to home</Link>
