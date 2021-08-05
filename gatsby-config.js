@@ -9,17 +9,24 @@ module.exports = {
             "gatsby-plugin-sharp",
             "gatsby-transformer-sharp",
              {
-               resolve:"gatsby-transformer-remark",
+               resolve:"gatsby-plugin-mdx",
                options: {
-                 plugins: [
-                   {
-                    resolve:"gatsby-remark-images",
-                    options: {
-                      maxWidth:590,
-                    },
-                   }
+                  gatsbyRemarkPlugins: [
+                    {
+                      resolve:"gatsby-remark-images",
+                      options:{
+                        maxWidth:400,
 
-                 ]
+                      },
+                    },
+                  ],
+               },
+             },
+             {
+               resolve:"gatsby-source-filesystem",
+               options:{
+
+                path: `${__dirname}/blogs/`
                },
              },
 
@@ -31,9 +38,6 @@ module.exports = {
                 path:`${__dirname}/blogs`
               },
             },
-            "gatsby-plugin-mdx",
-
-  
           
           ],
 };

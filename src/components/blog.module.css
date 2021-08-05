@@ -14,5 +14,9 @@
     ul{
         display: block;
     }
+    .blogs p {
+        /* background-color: rgb(175, 174, 151);   */
+        text-align: center;
+   }
     
 }
