@@ -36,7 +36,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
          <Link to ="/"><h1 className ={pink}>{pageHeading}</h1></Link>
          <hr></hr>
          {children}
-         <Box as="header" sx={{ bg: "highlight", mb: "1.45rem" }}>
+         {/* <Box as="header" sx={{ bg: "highlight", mb: "1.45rem" }}>
       <Box
         as="div"
         sx={{
@@ -52,7 +52,7 @@ const Layout = ({pageTitle,pageHeading,children}) => {
           <p>Hello world</p>
         </Box>
       </Box>
-    </Box>
+    </Box> */}
           
          <footer>
              &copy; 2021 Olvine George
