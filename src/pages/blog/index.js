@@ -35,7 +35,7 @@ query  {
   allMdx(sort: {fields: frontmatter___date, order: DESC}) {
     nodes {
       frontmatter {
-        date(formatString: " dddd, MMMM Do YYYY")
+        date(formatString: "MMMM D, YYYY")
         title
          
       }

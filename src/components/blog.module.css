@@ -5,9 +5,15 @@
 }
  
 .blogs p {
+    color:#fff;
+    
 
      text-align: center;
     
+}
+img{
+    height:200px;
+    width:200px;
 }
  
  

@@ -3,22 +3,26 @@ body{
     padding: 0;
     font-family: "Open Sans";
     /* background-color: #2a3047; */
-    background-color: #fff;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/claus-grunstaudl-dKeB0-M9iiA-unsplash.jpg');
+    background-position:initial;
+    background-repeat: no-repeat;
+   
+   
     /* background-color: #fff; */
-    color: #000;
+
 }
 .nav ul{
     float: right;
-    margin-left: 2em;
     display: flex;
+    margin-right: 10px;
     
 }
  .nav li{
-    margin-left: 2em;
+    margin-left:10px ;
     list-style-type: none;
     text-transform: uppercase;
  }
-.pink{color:black}
+ 
  a{
      text-decoration: none;
      color:rgb(151, 93, 60);
@@ -42,31 +46,58 @@ ul{
 }
  
 footer{
-    background-color:rgb(206, 172, 133);
+    
     padding: 15px;
 }
 .container{
-    margin: auto;
+    margin-left: 150px;
     max-width: 1000px;
-    color: #000;
+    color: #fff;
+    z-index: -9;
+   
+    /* background-image: url('../images/firmbee-com-TMOeGZw9NY4-unsplash.jpg'); */ 
 }
- 
+ .images{
+     display:flex;
+     
+ }
+ .images img{
+    padding: 16px;
+ }
+ .images .right{
+     margin-left: 50px;
+ }
+ .images .left{
+     width: 400px;
+ }
 .siteTitle{
     font-size: 3rem;
-    color: gray;
+    color: rgb(151, 93, 60);
     font-weight:700;
 }
 p{
      width:800px;
 }
+.pod{
+    border-radius: 50%;
+}
  
 @media  only screen  and (max-width:500px){
-    ul{
-        display: block;
+    .container{
+        margin-left: 10px;
+    }
+    ul, .images
+    
+    {
+        display: grid;
+        grid-template-columns: 1fr;
     }
     p{
         width: 100%;
         
+    }
+    .nav ul{
+        display: none;
     }
     .nav li{
         margin-left: 1em;
